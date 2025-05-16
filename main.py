@@ -12,5 +12,5 @@ uploaded_file = st.file_uploader(
 if uploaded_file:
     image = Image.open(uploaded_file)
     human_description = describe_human(image)
-    st.image(image, caption="Image importée", use_column_width=True)
+    st.image(image, caption="Image importée", use_container_width=True)
     st.write(human_description)
